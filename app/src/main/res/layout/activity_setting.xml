@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:settingitem="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.cskaoyan.mobilesafe.activity.SettingActivity">
+    <TextView
+        style="@style/TitleStyle"
+        android:text="设置中心"
+        />
+    <com.cskaoyan.mobilesafe.activity.SettingItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/siv_update"
+        settingitem:itemtitle="自动更新设置"
+        settingitem:desc_on="自动更新已经开启"
+        settingitem:desc_off="自动更新已关闭"
+
+        />
+</LinearLayout>

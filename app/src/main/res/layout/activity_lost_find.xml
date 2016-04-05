@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.cskaoyan.mobilesafe.activity.LostFindActivity">
+    <TextView
+        style="@style/TitleStyle"
+        android:text="手机防盗"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/ContentStyle"
+            android:text="安全号码"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_phone"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/ContentStyle"
+            android:text="防盗保护是否开启"
+            />
+        <ImageView
+            android:id="@+id/iv_protect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/lock"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        style="@style/ContentStyle"
+        android:layout_width="match_parent"
+        android:text="重新进入设置向导"
+        android:onClick="reEnter"
+        android:clickable="true"
+        android:background="@drawable/shape_selector"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_divider"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能简介"
+        android:layout_marginTop="5dp"
+        android:background="#5000"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:padding="3dp"
+        />
+    <TextView
+        style="@style/ContentStyle"
+        android:text="GPS追踪:#*location*#"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        style="@style/ContentStyle"
+        android:text="播放报警音乐:#*alarm*#"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        style="@style/ContentStyle"
+        android:text="远程删除数据:#*wipedata*#"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        style="@style/ContentStyle"
+        android:text="远程锁屏:#*lockscreen*#"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:layout_marginTop="20dp"
+
+        />
+</LinearLayout>
